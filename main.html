@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href = "css/main.css" rel="stylesheet">
+
+<script>
+$(document).ready(function(){
+ $(window).bind('scroll',function() {
+   console.log($(window).scrollTop());
+   if($(window).scrollTop() > 96){
+     $('.secondarynav').addClass('fixed');
+
+   }
+   else{
+    $('.secondarynav').removeClass('fixed');
+   }
+ });
+});
+
+function myFunction() {
+  var x = document.getElementById('displaymore');
+  var y = document.getElementById('buttonmore');
+  console.log(x.style.display === 'none');
+  if(x.style.display === 'none'){
+    x.style.display = 'block';
+
+  }
+  else{
+    x.style.display = 'none';
+
+
+  }
+}
+</script>
+</head>
+<body>
+<div class= "container">
+<div class="primarynav">
+    <img src= "images/banner.png">
+    <ul>
+    <li><a href="#">Home </a></li>
+    <li><a href="#">Programs</a>
+    <ul>
+       <li><a href="#">Link </a></li>
+       <li><a href="#">Link </a></li>
+    </ul>
+  </li>
+  <li><a href="#">Research </a>
+    <ul>
+      <li><a href="#">Link </a></li>
+      <li><a href="#">Link </a></li>
+    </ul>
+  </li>
+    <li><a href="#">Knowledge Center </a>
+    <ul>
+      <li><a href="#">Link </a></li>
+      <li><a href="#">Link </a></li>
+    </ul>
+  </li>
+  <li><a href="#">About </a>
+  <ul>
+    <li><a href="#">Link </a></li>
+    <li><a href="#">Link </a></li>
+  </ul>
+</li>
+  <li><a href="#">Event </a>
+  <ul>
+    <li><a href="#">Link </a></li>
+    <li><a href="#">Link </a></li>
+  </ul>
+</li>
+</ul>
+
+</div>
+
+<div class="secondarynav">
+  <h1> PROGRAM: Brand Innovation from Value Chain Inspection </h1>
+    <ul>
+    <li><a href="#">Overview </a></li>
+    <li><a href="#">Elements & Resources </a></li>
+  <li><a href="#">Resources </a></li>
+    <li><a href="#">Sponsers </a></li>
+  <li><a href="#">Related </a></li>
+</ul>
+
+</div>
+<img src = "images/business.jpg", style="width: 900px">
+  <div class="brand">
+
+  <img src ="images/banner.png">
+  <h2> Hided Program Title(check/uncheck) </h2>
+    <b> <p>How New Marketing Production Technologies and Creative Supply Chain
+      Partners Impact Go-to-Market Strategies and Outcomes</p></b>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque feugiat ac magna non posuere. Etiam tempus finibus ligula,
+        in laoreet nulla pellentesque eget. Cras vel odio eget sem volutpat
+        tempor at id nunc. Nullam vitae est vitae orci accumsan euismod vitae
+        in nisl. Aliquam quis dui sed est faucibus iaculis. In hac habitasse
+        platea dictumst. Etiam nec turpis condimentum ante aliquam condimentum
+        ut quis libero. Quisque venenatis id leo quis lacinia. Aliquam vestibulum
+        , orci vitae vulputate finibus, tellus augue cursus arcu, et condimentum
+        odio enim pretium nulla. Mauris ullamcorper leo sed mauris gravida euismod.
+        Curabitur semper quis ligula nec pulvinar.
+        <button onclick ="myFunction()" id ="buttonmore"> More V </button>
+
+        <div id = "displaymore">
+          <p>
+            Quisque cursus ipsum ante, et accumsan nisl aliquam pharetra.
+            Praesent faucibus pellentesque sem, nec varius ligula tincidunt vitae.
+             Donec hendrerit felis ut ipsum vulputate, at porttitor lorem tempus.
+             Fusce mattis tincidunt hendrerit. In hac habitasse platea dictumst.
+             Quisque nec elementum massa. Sed sodales id purus sit amet aliquam.
+             Phasellus ut lobortis purus, sit amet feugiat erat. Proin accumsan
+             diam fermentum ex porta sagittis. Suspendisse et est orci.
+          </p>
+        </div>
+      </p>
+      <!-- brand-->
+
+</div>
+
+<div class="program">
+  <h2> Program Elements and Content </h2>
+
+  <div class="col1">
+  <h3> Background </h3>
+  <p style= "color: hotpink"><b> Lorem ipsum dolor sit amet </b></p>
+  <p> <b>Vestibulum et felis cursus, aliquam quam a, dignissim metus. </b></p>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Vivamus accumsan leo mauris, ut volutpat tortor laoreet sit amet.
+    Nullam nec gravida mauris. Aenean eu ex augue</p>
+  <a href ="#">Download > </a>
+
+
+  </div>
+  <div class= "col2">
+  <h3> Related Report </h3>
+  <p style= "color: hotpink"><b> Lorem ipsum dolor sit amet </b></p>
+  <p> <b>Vestibulum et felis cursus, aliquam quam a, dignissim metus.</b></p>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Vivamus accumsan leo mauris, ut volutpat tortor laoreet sit amet.
+    Nullam nec gravida mauris. Aenean eu ex augue</p>
+  <a href ="#">Download > </a>
+
+</div>
+
+<div class="col3">
+  <h3> Interview  </h3>
+  <p style= "color: hotpink"><b> Lorem ipsum dolor sit amet </b></p>
+    <p> <b>Vestibulum et felis cursus, aliquam quam a, dignissim metus. </b></p>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Vivamus accumsan leo mauris, ut volutpat tortor laoreet sit amet.
+    Nullam nec gravida mauris. Aenean eu ex augue</p>
+  <a href ="#">More > </a>
+
+</div>
+
+  <!-- program-->
+</div>
+<br>
+<div class="resources">
+  <h2> Resources </h2>
+
+  <div class="col4">
+  <h3> Facts & Stats </h3>
+  <p>Dec 2016</p>
+  <p><b> 59 percent of consumers like to tell others about new products. </b></p>
+  <a href ="#">Source: Kayako</a>
+
+  <p>Dec 2016</p>
+  <p><b> Almost 60 percent of consumers in a study were unlikely or very
+  unlikely to return to a business they had experienced poor customer service from,
+even if a trusted friend said the service had improved. </b></p>
+  <a href ="#">Source: Kayako</a>
+
+  <p><b> 48% of global consumers don't believe most brands take action on customer feedback. </b></p>
+  <a href ="#">Source: Customer Think</a>
+
+  <p>Oct 2016</p>
+  <p><b> 67% of global consumers across all age groups expect brands to respond
+  within 24 hours to their customers service questions, complaints or praise
+on social media. </b></p>
+  <a href ="#">Source: Kayako</a>
+  <br>
+  <button type="button"> More </button>
+ </div>
+
+  <div class="col5">
+  <h3> Articles And Blogs </h3>
+  <p>May 2017 MediaVataar</p>
+  <a href ="#">Google and Facebook now control 20% of global adspend</a>
+
+  <p>May 2017 Alexandra Brueli</p>
+  <a href ="#">The Rise of Transparent Digital Ad Buying</a>
+
+  <p>May 2017 Media Avataar India</p>
+  <a href ="#">Interaction 2017: Digital Advertising Investment Will Surpass TV
+  in Five More Countries</a>
+
+  <p>May 2017 Staff</p>
+  <a href ="#">Consumers Dislike Online Pop-up Ads the Most, Print Ads in
+  Newspapers and Magazines the Least</a>
+
+  <p>May 2017 Jim Marous</p>
+  <a href ="#">Banks are Marketing Like It's 1999</a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button type="button"> More </button>
+
+  </div>
+
+<div class="col6">
+  <h3> Book </h3>
+  <p><b>Suman Sarkar (Author) </b></p>
+  <p> The Supply Chain Revolution: Innovative
+    Sourcing and Logistics for a Fiercely Competitive
+    World (Agency/Distrubuted) Hardcover
+    </p>
+    <a href="#"> More > </a>
+
+</div>
+<div class="col7">
+  <h3> White Paper </h3>
+  <p><b>Suman Sarkar (Author) </b></p>
+  <p> The Supply Chain Revolution: Innovative
+    Sourcing and Logistics for a Fiercely Competitive
+    World (Agency/Distrubuted) Hardcover
+    </p>
+    <a href="#"> More > </a>
+</div>
+<div class="col8">
+  <h3> Book </h3>
+  <p><b>Suman Sarkar (Author) </b></p>
+  <p> The Supply Chain Revolution: Innovative
+    Sourcing and Logistics for a Fiercely Competitive
+    World (Agency/Distrubuted) Hardcover
+    </p>
+    <a href="#"> More > </a>
+</div>
+<div class="col9">
+  <h3> Presentation </h3>
+  <p><b>Suman Sarkar (Author) </b></p>
+  <p> The Supply Chain Revolution: Innovative
+    Sourcing and Logistics for a Fiercely Competitive
+    World (Agency/Distrubuted) Hardcover
+    </p>
+    <a href="#"> More > </a>
+</div>
+
+<div class="col10">
+  <h3> Book </h3>
+  <p><b>Suman Sarkar (Author) </b></p>
+  <p> The Supply Chain Revolution: Innovative
+    Sourcing and Logistics for a Fiercely Competitive
+    World (Agency/Distrubuted) Hardcover
+    </p>
+    <a href="#"> More > </a>
+</div>
+<div class="col11">
+  <h3> White Paper </h3>
+  <p><b>Suman Sarkar (Author) </b></p>
+  <p> The Supply Chain Revolution: Innovative
+    Sourcing and Logistics for a Fiercely Competitive
+    World (Agency/Distrubuted) Hardcover
+    </p>
+    <a href="#"> More > </a>
+</div>
+<div class="col12">
+  <h3> Book </h3>
+  <p><b>Suman Sarkar (Author) </b></p>
+  <p> The Supply Chain Revolution: Innovative
+    Sourcing and Logistics for a Fiercely Competitive
+    World (Agency/Distrubuted) Hardcover
+    </p>
+    <a href="#"> More > </a>
+</div>
+<div class="col13">
+  <h3> Book </h3>
+  <p><b>Suman Sarkar (Author) </b></p>
+  <p> The Supply Chain Revolution: Innovative
+    Sourcing and Logistics for a Fiercely Competitive
+    World (Agency/Distrubuted) Hardcover
+    </p>
+    <a href="#"> More > </a>
+</div>
+  <!-- resources-->
+</div>
+
+
+<div class="sponser">
+  <h2> Sponsers </h2>
+  <img src="images/banner.png">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Vivamus accumsan leo mauris, ut volutpat tortor laoreet sit amet.
+    Nullam nec gravida mauris. Aenean eu ex augue.
+    Maecenas luctus, diam vitae blandit auctor, tellus lorem dignissim nisi,
+    vel fringilla metus lectus quis turpis. Suspendisse commodo tellus nunc,
+    sed hendrerit turpis interdum ac. Donec at auctor ex, scelerisque maximus
+    ligula. Vestibulum et felis cursus, aliquam quam a, dignissim metus.
+    Donec eu mollis tortor. <a href="#">www.cmocouncil.org </a>
+  </p>
+
+  <img src="images/banner.png">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Vivamus accumsan leo mauris, ut volutpat tortor laoreet sit amet.
+    Nullam nec gravida mauris. Aenean eu ex augue.
+    Maecenas luctus, diam vitae blandit auctor, tellus lorem dignissim nisi,
+    vel fringilla metus lectus quis turpis. Suspendisse commodo tellus nunc,
+    sed hendrerit turpis interdum ac. Donec at auctor ex, scelerisque maximus
+    ligula. Vestibulum et felis cursus, aliquam quam a, dignissim metus.
+    Donec eu mollis tortor. <a href="#"> www.npes.org </a>
+  </p>
+  <!-- sponser-->
+</div>
+
+<div class="footer">
+  <p> 2017 CMO Council | <a href="#">Privacy Policy</a> | <a href="#"> Site Map </a> </p>
+</div>
+<!--container-->
+</div>
+ </body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+ </html>
+                                                                                                                                                                                                                                                                                                                                                                                            

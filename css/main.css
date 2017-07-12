@@ -1,0 +1,174 @@
+.container{
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.secondarynav{
+  color: grey;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 75px;
+}
+.secondarynav h1{
+  padding: 0;
+  margin: 0;
+}
+.secondarynav ul{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: 100px;
+}
+.primarynav img{
+  width: 100px;
+
+}
+.primarynav ul{
+  list-style:none;
+}
+.primarynav li:hover ul{
+  display: block;
+
+}
+.primarynav li ul{
+  position: absolute;
+  display: none;
+
+  z-index: 1;
+  width: 100px;
+
+}
+.primarynav li ul li{
+  display: block;
+  background-color: darkgrey;
+  color: white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.primarynav li ul li a:hover{
+  background-color: hotpink;
+}
+.primarynav li ul a{
+  color: white;
+}
+
+ul{
+  display: inline-block;
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  text-align: left;
+  display: inline-block;
+}
+li a{
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover{
+  text-decoration: underline hotpink;
+  color: hotpink;
+}
+a{
+  color: hotpink;
+  text-decoration: none;
+}
+.fixed{
+  top: 0;
+  z-index: 1;
+  position: fixed;
+  width: 900px;
+
+}
+.brand{
+  padding-top: 20px;
+    margin: 0 auto;
+    width: 600px;
+}
+.brand img{
+  float: left;
+  width: 120px;
+}
+.sponser img{
+ float: left;
+  width: 100px;
+  padding-right:10px;
+  padding-bottom:10px;
+}
+.brand h2{
+  display: inline;
+}
+.col1, .col2, .col3{
+  display: inline-block;
+  width: 31.5%;
+
+}
+.col1 h2, .col2 h2, .col3 h2{
+  border: none;
+
+}
+.col4, .col5 {
+  width: 48.5%;
+  padding: 5px;
+  display: inline-block;
+}
+.col6 , .col7 , .col8 ,.col9 {
+  width: 23.5%;
+  padding: 5px;
+  display: inline-block;
+}
+.col10, .col11,.col12, .col13{
+  width: 23.5%;
+  padding: 5px;
+  display: inline-block;
+}
+.col1 h3, .col2 h3, .col3 h3{
+  background-color: hotpink;
+}
+.col6 h3, .col7 h3, .col8 h3,.col9 h3,.col10 h3, .col11 h3, .col12 h3, .col13 h3{
+  background-color: grey;
+
+}
+.program h2, .resources h2, .sponser h2{
+  border-top: 2px solid hotpink;
+}
+h1{
+  background-color: hotpink;
+  color: white;
+  text-align: center;
+}
+h2{
+  color: hotpink;
+  text-align: center;
+}
+h3{
+  background-color: black;
+  color: white;
+  text-align: center;
+
+}
+
+
+button{
+  margin-top: 5px;
+  background-color: hotpink;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 25px;
+}
+.footer{
+  background-color: grey;
+  padding: 1px 1px 1px 50px;
+  color: white;
+
+}
+.footer a{
+  color: white;
+}
